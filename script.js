@@ -99,13 +99,7 @@ function listar () {
     })
     document.querySelector('tbody').innerHTML= content
 
-    if(JSON.stringify(dados)=='[null]'){
-        localStorage.setItem('dados', '[]')
-    }else{
-        
-    }
-
+   
     
 }
 listar ()
-()
