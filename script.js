@@ -1,6 +1,6 @@
-var dados = localStorage.getItem('dados')? JSON.parse(localStorage.getItem('dados')) : []
+var dados = []
 
-var tela= 1
+var tela=1
 var selecionado=null
 function add (){
     var nome = document.querySelector('#nome').value
@@ -102,9 +102,10 @@ function listar () {
     if(JSON.stringify(dados)=='[null]'){
         localStorage.setItem('dados', '[]')
     }else{
-        localStorage.setItem('dados', JSON.stringify(dados))
+        
     }
 
     
 }
 listar ()
+()
